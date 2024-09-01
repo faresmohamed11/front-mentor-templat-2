@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+
+
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    p {
+        font-size: 18px;
+
+    }
+
+    font-family: "Hanken Grotesk",
+    sans-serif;
+}
+
+.attribution {
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--White);
+    position: relative;
+}
+
+@media (max-width:375px) {
+    .page {
+        flex-direction: column;
+        position: relative;
+        /* top: -75px; */
+        height: 100%;
+    }
+
+}
+
+.page .leftpart {
+
+    display: flex;
+    padding: 50px;
+    flex-basis: 35%;
+    text-align: center;
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    box-shadow: 0 0 20px 5px var(--Light-lavender);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 468px;
+
+}
+
+.page .leftpart h2 {
+    font-size: 18px;
+    margin: 0 0 25px;
+    color: var(--Light-lavender);
+    font-weight: bold;
+}
+
+.page .leftpart .circle {
+    border-radius: 50%;
+    width: 150px;
+    background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.page .leftpart .circle .number {
+    font-size: 50px;
+    display: block;
+    width: 100%;
+    color: var(--White);
+    font-weight: bold;
+
+}
+
+.page .leftpart .circle .ofnumber {
+    font-size: 13px;
+    color: var(--Light-lavender);
+    font-weight: bold;
+
+}
+
+.page .leftpart .content h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    color: var(--White);
+}
+
+.page .leftpart .content p {
+    letter-spacing: 0.5px;
+    color: var(--Light-lavender);
+    font-weight: bold;
+
+}
+
+.page .rightpart {
+    height: 468px;
+    padding: 50px;
+    flex-basis: 35%;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    background-color: var(--Persian-blue);
+    box-shadow: 0 0 20px 5px var(--Light-lavender);
+
+}
+
+.page .rightpart h2 {
+    margin: 0 0 25px;
+    color: var(--Dark-gray-blue);
+    font-size: 22px;
+
+}
+
+.page .rightpart .columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.page .rightpart .columns .colum {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+
+
+}
+
+.page .rightpart .columns .colum .leftside {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.page .rightpart .columns .red {
+    --Light-red: hsl(0 100% 67% / 11%);
+    background-color: var(--Light-red);
+
+}
+
+.page .rightpart .columns .red span {
+    --Light-red: hsl(0 100% 67%);
+    color: var(--Light-red);
+
+}
+
+.page .rightpart .columns .yello {
+    --Orangey-yellow: hsl(39 100% 56% / 11%);
+    background-color: var(--Orangey-yellow);
+}
+
+.page .rightpart .columns .yello span {
+    --Orangey-yellow: hsl(39 100% 56%);
+    color: var(--Orangey-yellow);
+
+}
+
+.page .rightpart .columns .green {
+    --Green-teal: hsl(166 100% 37% / 11%);
+    background-color: var(--Green-teal);
+}
+
+.page .rightpart .columns .green span {
+    --Green-teal: hsl(166 100% 37%);
+    color: var(--Green-teal);
+
+}
+
+.page .rightpart .columns .blue {
+    --Cobalt-blue: hsl(234 85% 45% / 11%);
+    background-color: var(--Cobalt-blue);
+}
+
+.page .rightpart .columns .blue span {
+    --Cobalt-blue: hsl(234 85% 45%);
+    color: var(--Cobalt-blue);
+
+}
+
+.page .rightpart .columns .colum .rightside span {
+    font-size: 13px;
+    color: var(--Dark-gray-blue);
+
+
+}
+
+.page .rightpart a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    padding: 13px 90px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.page .rightpart a:hover {
+    background-color: var(--Cobalt-blue);
+}
